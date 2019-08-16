@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# bin/detect <build-dir>
+echo 'jaeger-agent-buildpack'
+exit 0
