@@ -6,3 +6,6 @@ mkdir -p "$1/bin/"
 cp "bin/jaeger-agent" "$1/bin/jaeger-agent"
 agent_version=$(./bin/jaeger-agent version)
 echo "-----> jaeger-agent-buildpack: Installed ${agent_version} to app/bin"
+
+cp bin/start-jaeger-agent "$1/bin/"
+echo '-----> jaeger-agent-buildpack: Added start-jaeger-agent to app/bin'
