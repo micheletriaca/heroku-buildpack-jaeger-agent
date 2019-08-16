@@ -10,7 +10,7 @@
 (
   # Take the command passed to this bin and start it.
   # E.g. bin/start-jaeger-agent bin/app -c config.json
-  COMMAND=${@:$n}
+  COMMAND=${@:1}
   echo "buildpack=jaeger-agent at=start-app cmd=$COMMAND"
   $COMMAND
 )
